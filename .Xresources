@@ -1,0 +1,25 @@
+/* rofi */
+!rofi.font:            Iosevka Term Medium 11
+rofi.font:            Monospace 10
+rofi.terminal:        termite
+rofi.lines:           10
+rofi.columns:         1
+rofi.eh:              1
+rofi.location:        0
+rofi.width:           100
+rofi.padding:         200
+rofi.fullscreen:      true
+rofi.bw:              1
+rofi.sidebar-mode:    true
+rofi.separator-style: dash
+rofi.hide-scrollbar:  true
+rofi.color-enabled:   true
+rofi.line-margin:     3
+rofi.modi:            drun,run,window,ssh
+
+rofi.color-window: argb:e4282c34, #282c34, #1e2529
+rofi.color-normal: #282c34, #c1c1c1, #282c34, #394249, #ffffff
+rofi.color-active: #282c34, #80cbc4, #282c34, #394249, #80cbc4
+rofi.color-urgent: #282c34, #ff1844, #282c34, #394249, #ff1844
+
+URxvt*font: xft:DejaVu Sans Mono for Powerline:size=11
