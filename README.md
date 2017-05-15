@@ -8,13 +8,7 @@ master branch is for my home PC, a single 24" FHD monitor.
 _Note: The differences are negligible, some are due to me screwing up font installation, and being lazy and using different icon font, or simply using a different wallpaper. Other differences are a bit more significant, like splitting odd and even workspaces among monitors. I keep them both up to date, so you can simply git diff the branches._
 
 ### Screenshots
-[Clean](screenshots/clean.png)
-
-[NeoVIM](screenshots/vim_neofetch.png)
-
-[Ranger & Cmus](screenshots/ranger_cmus_lyvi.png)
-
-[Rofi](screenshots/rofi.png)
+Check the screenshots folder
 
 
 ## Using these dotfiles
