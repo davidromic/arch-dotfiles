@@ -43,8 +43,9 @@ set $ws10 "10: "
 # random bindsyms
 bindsym $mod+shift+p exec scrot -e 'mv $f ~/screenshots/'
 bindsym $mod+shift+f exec thunar
-bindsym $mod+l exec i3lock -e -t -i ~/arch-dotfiles/wallpapers/forrest.png
+bindsym $mod+l exec i3lock -e -t -i ~/arch-dotfiles/wallpapers/darksouls/ds_bw.png
 bindsym XF86AudioPlay exec --no-startup-id cmus-remote --pause # && pkill --signal SIGRTMIN+13 i3blocks
+bindsym $mod+F12 exec --no-startup-id xkblayout-state set +1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -69,6 +70,15 @@ smart_borders   no_gaps     #draw borders if more than one container
 new_window      none
 
 workspace $ws2 gaps inner 0
+
+set $mode_gaps Toggle gaps: (1) on (2) off
+bindsym $mod+Tab mode "$mode_gaps"
+mode "$mode_gaps" {
+    bindsym 1 mode "default", gaps inner current set 10
+    bindsym 2 mode "default", gaps inner current set 0
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 
 # move to monitor
 workspace $ws1 output HDMI-2
@@ -146,10 +156,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-#bindsym $mod+a focus parent
+bindsym $mod+q focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+a focus child
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1

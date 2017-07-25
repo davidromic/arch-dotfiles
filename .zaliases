@@ -17,3 +17,7 @@ alias gs='git status'
 alias seten='xkblayout-state set 0'
 alias sethr='xkblayout-state set 1'
 
+# dev
+alias ags='./startgdb*'
+alias ag='arm-none-eabi-gdb'
+alias rtt='JLinkRTTClient'
