@@ -70,6 +70,15 @@ new_window      none
 
 workspace $ws2 gaps inner 0
 
+set $mode_gaps Toggle gaps: (1) on (2) off
+bindsym $mod+Tab mode "$mode_gaps"
+mode "$mode_gaps" {
+    bindsym 1 mode "default", gaps inner current set 10
+    bindsym 2 mode "default", gaps inner current set 0
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier   $mod
 
@@ -134,10 +143,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-#bindsym $mod+a focus parent
+bindsym $mod+q focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+a focus child
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
