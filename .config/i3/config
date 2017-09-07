@@ -74,7 +74,7 @@ workspace $ws2 gaps inner 0
 set $mode_gaps Toggle gaps: (1) on (2) off
 bindsym $mod+Tab mode "$mode_gaps"
 mode "$mode_gaps" {
-    bindsym 1 mode "default", gaps inner current set 10
+    bindsym 1 mode "default", gaps inner current set 5
     bindsym 2 mode "default", gaps inner current set 0
     bindsym Return mode "default"
     bindsym Escape mode "default"
