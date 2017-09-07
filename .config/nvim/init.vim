@@ -23,7 +23,10 @@ set background=dark
 hi Visual term=reverse cterm=Bold,reverse ctermbg=Black
 
 " remaps
+" 1. select all, 
+" 2. save and run
 map <C-a> <esc>ggVG<CR>
+map <C-n> :w<CR>:!./%<CR>
 
 "Remove all trailing whitespace on close
 function! <SID>StripTrailingWhitespaces()
