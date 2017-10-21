@@ -45,6 +45,7 @@ bindsym $mod+shift+p exec scrot -e 'mv $f ~/screenshots/'
 bindsym $mod+l exec i3lock -e -i ~/arch-dotfiles/wallpapers/darksouls/solaire.png
 bindsym XF86AudioPlay exec --no-startup-id cmus-remote --pause
 bindsym $mod+shift+f exec pcmanfm
+bindsym $mod+F12 exec --no-startup-id xkblayout-state set +1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
