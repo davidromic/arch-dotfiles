@@ -3,7 +3,7 @@ Arch Linux
 
 master branch is for my home PC, a single 24" FHD monitor.
 
-2ultrawide_mon is for my work PC which, surprisingly, has 2 ultrawide monitors, 2560*1080.
+2_monitors is for my work PC which, surprisingly, has 2 ultrawide monitors, 2560*1080.
 
 _Note: The differences are negligible, some are due to me screwing up font installation, and being lazy and using different icon font, or simply using a different wallpaper. Other differences are a bit more significant, like splitting odd and even workspaces among monitors. I keep them both up to date, so you can simply git diff the branches._
 
